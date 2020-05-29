@@ -1,0 +1,30 @@
+{
+	"name": "discord-bot-template",
+	"version": "1.0.0",
+	"description": "Template project for discord bots.",
+	"author": "DaCurse",
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DaCurse/discord-bot-template.git"
+	},
+	"scripts": {
+		"start": "node src/index",
+		"start:dev": "set DEBUG=discord-bot-template:* && nodemon src/index",
+		"format": "prettier --write **/*.js",
+		"lint": "eslint **/*.js --fix"
+	},
+	"devDependencies": {
+		"eslint": "^7.1.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-prettier": "^3.1.3",
+		"nodemon": "^2.0.3",
+		"prettier": "^2.0.5"
+	},
+	"dependencies": {
+		"debug": "^4.1.1",
+		"discord.js": "^12.2.0",
+		"sequelize": "^5.21.11",
+		"sqlite3": "^4.2.0"
+	}
+}
